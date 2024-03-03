@@ -1,22 +1,24 @@
 import { useState } from "react";
-import logo from '../assets/logo.png'
+import logo from "../assets/logo(2).png";
 
 function Navbar() {
   return (
-      <div className="flex flex-row justify-between mt-5">
-        <div className="logo">
-          <img src={logo}/>
-        </div>
-        <div className="navbar">
-          <ul>
-            <li>Teachers</li>
-            <li>Courses</li>
-            <li>Scholarship</li>
-            <li>Pricing</li>
-          </ul>
-          <button>Signup</button>
-        </div>
+    <div className="mx-[118px] flex flex-row justify-around mt-5 border-b pb-3">
+      <div className="logo">
+        <img className="w-[140px]"  src={logo} />
       </div>
+      <div className="flex flex-row  items-center gap-8  text-[#1e1e1e]">
+        <ul className="flex flex-row gap-8">
+          <li className="cursor-pointer hover:border-b border-[#0D8974]">Teachers</li>
+          <li className="cursor-pointer hover:border-b border-[#0D8974]">Courses</li>
+          <li className="cursor-pointer hover:border-b border-[#0D8974]">Scholarship</li>
+          <li className="cursor-pointer hover:border-b border-[#0D8974]">Pricing</li>
+        </ul>
+        <button className="border-[#0D8974] border  w-[75px] h-[30px] rounded-full text-center text-sm cursor-pointer hover:bg-[#0D8974] hover:text-[#f5f5f5]">
+          Signup
+        </button>
+      </div>
+    </div>
   );
 }
 
