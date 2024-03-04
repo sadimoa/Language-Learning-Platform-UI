@@ -7,7 +7,7 @@ import WhyChooseUsPage from "../WhyChooseUs/WhyChooseUsPage";
 
 function FeaturesPage() {
   return (
-    <div className="my-20 mx-[118px]">
+    <div className="my-40 mx-[118px]">
       <h1 className="text-center text-4xl font-medium  mb-20">
         Provided Features
       </h1>
@@ -17,7 +17,7 @@ function FeaturesPage() {
 
           <h3 className="font-bold">Remote Friendly</h3>
           <p className="font-light">
-            Remote-Friendly Learning: <br /> Access Knowledge Anywhere, <br />
+            Access Knowledge Anywhere, <br />
             Anytime!
           </p>
         </div>
@@ -26,8 +26,7 @@ function FeaturesPage() {
 
           <h3 className="font-bold">Digital Diploma</h3>
           <p className="font-light">
-            Elevate Your Credentials: <br /> Achieve a Digital Diploma for{" "}
-            <br />
+            Achieve a Digital Diploma for <br />
             Success!
           </p>
         </div>
@@ -36,9 +35,9 @@ function FeaturesPage() {
 
           <h3 className="font-bold">Private Target</h3>
           <p className="font-light">
-            Private Learning, Tailored for: <br /> You: Elevate Your Skills with{" "}
+            Private Learning, Tailored for:
             <br />
-            Courses
+            You
           </p>
         </div>
         <div className="text-center p-3  rounded-sm flex flex-col items-center">
@@ -46,7 +45,7 @@ function FeaturesPage() {
 
           <h3 className="font-bold">Modern Method</h3>
           <p className="font-light">
-            Master Languages with Modern: <br /> Methods: Your Path to <br />
+            Master Languages with Modern: <br />
             Proficiency
           </p>
         </div>

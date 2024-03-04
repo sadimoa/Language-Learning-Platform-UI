@@ -4,7 +4,9 @@ import HeroPage from "./Hero/HeroPage.jsx";
 import FeaturesPage from "./Features/FeaturesPage.jsx";
 import WhyChooseUsPage from "./WhyChooseUs/WhyChooseUsPage.jsx";
 import Courses from "./Courses/Courses.jsx";
-import Testmo from "./TestmoPage/Testmo.jsx";
+import Testmo from "./TestimonialPage/Testmo.jsx";
+import Cta from "./Cta/Cta.jsx";
+import Footer from "./Footer/Footer.jsx";
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
       <HeroPage />
       <FeaturesPage />
       <Courses />
+      <Cta />
       <Testmo />
+      <Footer />
     </div>
   );
 }
