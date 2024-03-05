@@ -1,7 +1,7 @@
 import React from "react";
-import speak from "../assets/Rectangle19.png";
-import reading from "../assets/Rectangle20.png";
-import writing from "../assets/Rectangle21.png";
+import speak from "../../assets/Rectangle19.png";
+import reading from "../../assets/Rectangle20.png";
+import writing from "../../assets/Rectangle21.png";
 
 function Courses() {
   return (

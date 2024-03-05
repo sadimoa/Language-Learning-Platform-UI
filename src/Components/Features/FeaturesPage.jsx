@@ -1,8 +1,8 @@
 import React from "react";
-import Goal from "../assets/Bullseye.png";
-import Graduate from "../assets/Graduate.png";
-import Chat from "../assets/Edit Chat History.png";
-import Earth from "../assets/Earth Planet.png";
+import Goal from "../../assets/Bullseye.png";
+import Graduate from "../../assets/Graduate.png";
+import Chat from "../../assets/Edit Chat History.png";
+import Earth from "../../assets/Earth Planet.png";
 import WhyChooseUsPage from "../WhyChooseUs/WhyChooseUsPage";
 
 function FeaturesPage() {

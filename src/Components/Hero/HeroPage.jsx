@@ -1,6 +1,6 @@
 import React from "react";
-import heroImg from "../assets/hero.png";
-import card1 from "../assets/Card10$.png";
+import heroImg from "../../assets/hero.png";
+import card1 from "../../assets/Card10$.png";
 
 function HeroPage() {
   return (

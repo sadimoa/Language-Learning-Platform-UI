@@ -1,10 +1,10 @@
 import React from "react";
-import logo from "../assets/logo(2).png";
-import telegram from "../assets/telegram.png";
-import facebook from "../assets/facebook.png";
-import instagram from "../assets/instagram.png";
-import Linkedin from "../assets/Linkedin.png";
-import copyright from "../assets/copyright.png";
+import logo from "../../assets/logo(2).png";
+import telegram from "../../assets/telegram.png";
+import facebook from "../../assets/facebook.png";
+import instagram from "../../assets/instagram.png";
+import Linkedin from "../../assets/Linkedin.png";
+import copyright from "../../assets/copyright.png";
 
 const Footer = () => {
   return (

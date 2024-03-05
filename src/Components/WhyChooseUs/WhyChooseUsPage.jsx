@@ -1,7 +1,7 @@
 import React from "react";
-import girl from "../assets/maskgirl.png";
-import boy from "../assets/maskboy.png";
-import card1 from "../assets/Card10$.png";
+import girl from "../../assets/maskgirl.png";
+import boy from "../../assets/maskboy.png";
+import card1 from "../../assets/Card10$.png";
 
 function WhyChooseUsPage() {
   return (
