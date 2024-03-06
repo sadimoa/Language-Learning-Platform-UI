@@ -5,7 +5,7 @@ const Signup = () => {
   return (
     <>
       <div className="w-full min-h-screen flex flex-row items-center ">
-       <div className="min-h-screen bg-[#0D8974] text-[#f5f5f5]  w-[50%]">
+       <div className="min-h-screen bg-[#0D8974] text-[#e2e2e2]  w-[50%]">
        <div className=" text-center m-auto mt-40">
           <h3 className="text-6xl pb-4 font-bold">Welcome Back!</h3>
           <p className="pb-10 text-2xl font-light">
