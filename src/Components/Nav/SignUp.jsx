@@ -1,5 +1,5 @@
 import React from "react";
-import { formik, form, field, errorMessage, Formik } from "formik";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 
 const Signup = () => {
   const initialValues = {
@@ -27,14 +27,15 @@ const Signup = () => {
             </button>
           </div>
         </div>
-        <div>
-          <Formik>
-          initialValues()
-          handleSubmit(e)
-
-          <form>
-
-          </form>
+        <div className="w-[50%] flex flex-col flex-wrap items-center justify-between min-h-full p-20">
+          <h3 className="text-4xl text-center">Create Account</h3>
+          <Formik initialValues={initialValues} onSubmit={handleSubmit}>
+            <Form className="mt-20 flex flex-col items-center justify-center gap-5">
+              <Field className="border border-black rounded-md bg-transparent" type="text" name="Name"  />
+              <Field className="border border-black rounded-md bg-transparent" type="email" name="Email" />
+              <Field className="border border-black rounded-md bg-transparent" type="Password" name="Password" />
+              <button className="bg-[#0D8974] border  w-[170px] h-[50px] rounded-full text-center text-sm cursor-pointer text-white  hover:text-[#3bb29e]">Submit</button>
+            </Form>
           </Formik>
         </div>
       </div>
