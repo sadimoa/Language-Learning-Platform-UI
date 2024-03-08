@@ -1,15 +1,22 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as yup from "yup";
 
 const Signup = () => {
   const initialValues = {
     name: "",
-    description: "",
+    email: "",
+    password: "",
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(e.target.value);
+  const validationSchema = yup.object({
+    name: yup.string().required("Name is required"),
+    email: yup.string().required("Email is required"),
+    password: yup.string().required("Password is required"),
+  });
+
+  const handleSubmit = (values) => {
+    console.log(values);
   };
 
   return (
@@ -27,14 +34,45 @@ const Signup = () => {
             </button>
           </div>
         </div>
-        <div className="w-[50%] flex flex-col flex-wrap items-center justify-between min-h-full p-20">
-          <h3 className="text-4xl text-center">Create Account</h3>
-          <Formik initialValues={initialValues} onSubmit={handleSubmit}>
-            <Form className="mt-20 flex flex-col items-center justify-center gap-5">
-              <Field className="border border-black rounded-md bg-transparent" type="text" name="Name"  />
-              <Field className="border border-black rounded-md bg-transparent" type="email" name="Email" />
-              <Field className="border border-black rounded-md bg-transparent" type="Password" name="Password" />
-              <button className="bg-[#0D8974] border  w-[170px] h-[50px] rounded-full text-center text-sm cursor-pointer text-white  hover:text-[#3bb29e]">Submit</button>
+        <div className="w-[50%] flex flex-col flex-wrap items-center min-h-full">
+          <h3 className="text-5xl font-bold text-[#44c2ad]">
+            Create Account
+          </h3>
+          <Formik
+            initialValues={initialValues}
+            validationSchema={validationSchema}
+            onSubmit={handleSubmit}
+          >
+            <Form className="mt-10 flex flex-col w-[350px] space-y-5">
+              <Field
+                className="border p-1 px-2 border-black rounded-md bg-transparent"
+                type="text"
+                name="name"
+                placeholder="Name"
+              />
+              <ErrorMessage name="name" className=" text-red-500"/>
+              <Field
+                className="border p-1 px-2 border-black rounded-md bg-transparent"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+              <ErrorMessage name="email"/>
+
+              <Field
+                className="border p-1 px-2 border-black rounded-md bg-transparent"
+                type="Password"
+                name="password"
+                placeholder="Password"
+              />
+              <ErrorMessage name="password" />
+
+              <button
+                type="submit"
+                className="bg-[#0D8974] border m-auto  w-[170px] h-[50px] rounded-full text-center text-sm cursor-pointer text-white  hover:text-[#3bb29e]"
+              >
+                Submit
+              </button>
             </Form>
           </Formik>
         </div>
