@@ -39,14 +39,6 @@ const Signup = () => {
         </div>
         <div className="w-[50%] flex flex-col flex-wrap items-center min-h-full">
           <h3 className="text-5xl font-bold text-[#44c2ad]">Create Account</h3>
-          <div className="flex items-center mt-5 gap-1">
-            <BiLogoFacebookCircle className=" text-blue-700  text-3xl" />
-            <AiFillGoogleCircle className="text-3xl text-red-500" />
-            <FaLinkedin className=" text-blue-500  text-3xl" />
-          </div>
-          <h4 className="text-center mt-3 font-light text-gray-300 ">
-            Or use Email for reistration
-          </h4>
 
           <Formik
             initialValues={initialValues}
@@ -97,7 +89,17 @@ const Signup = () => {
               </button>
             </Form>
           </Formik>
+
+          <div className="flex items-center mt-24 gap-1">
+            <BiLogoFacebookCircle className=" text-blue-700  text-3xl" />
+            <AiFillGoogleCircle className="text-3xl text-red-500" />
+            <FaLinkedin className=" text-blue-500  text-3xl" />
+          </div>
+          <h4 className="text-center mt-3 font-light text-gray-300 ">
+            Or use Email for reistration
+          </h4>
         </div>
+        
       </div>
     </>
   );
