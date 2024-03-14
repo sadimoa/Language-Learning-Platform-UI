@@ -1,24 +1,19 @@
-import { useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { Routes, Route } from "react-router-dom";
 import Signup from "./Components/Nav/SignUp.jsx";
-import Dashboard from "./Dashboard/Dashboard.jsx";
+import Dashboard from "./Components/Dashboard/Dashboard.jsx";
 import HomePage from "./HomePage.jsx";
 
 function App() {
-  const [ users, setUsers ] = useState([])
+  const [users, setUsers] = useState([]);
 
   useEffect(() => {
-   axios.get("https://language-learning-platform.onrender.com/api/users")
-   .then(res => console.log(res.data))
-   .catch(error => console.log(error))
-  },[])
-
-
-
-
-
-
+    axios
+      .get("https://language-learning-platform.onrender.com/api/users")
+      .then((res) => console.log(res.data))
+      .catch((error) => console.log(error));
+  }, []);
 
   return (
     <Routes>
